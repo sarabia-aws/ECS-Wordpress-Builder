@@ -58,6 +58,6 @@ echo "Waiting for EC2 instance to join cluster..."
 sleep 140
 
 echo "Running Task on Cluster"
-aws ecs run-task --cluster $ecs_cluster --task-definition $task_def$taskdef_count --count 1
+aws ecs run-task --cluster $ecs_cluster --task-definition $task_def --count 1
 
 echo "Wordpress is being deployed...Give the Running Task at least 30 seconds to update and check Container Instance"
